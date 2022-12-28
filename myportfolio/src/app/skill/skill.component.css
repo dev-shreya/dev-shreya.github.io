@@ -1,0 +1,47 @@
+#hand1{
+    animation: wave 1s infinite alternate;
+    transform-origin:bottom;
+    transform-box: fill-box;
+     
+}
+#hand2{
+    animation: wave1 1s infinite alternate;
+    transform-origin:right;
+    transform-box: fill-box;
+     
+}
+/* svg{
+    height: 100vh;
+} */
+/* #Path2940{
+    animation: bounce 1s infinite alternate;
+    transform-origin:right;
+    transform-box: fill-box;
+     
+}
+#Path2941{
+    animation: bounce1 1s infinite alternate;
+    transform-origin:right;
+    transform-box: fill-box;
+     
+} */
+@keyframes wave{
+    0%{
+transform: rotate(10deg)
+/* transform: rotate3d(1, 1, 1, -45deg); */
+    }
+    100%{
+        transform: rotate(-7deg)
+        /* transform: rotate3d(1, 1, 1, 45deg); */
+    }
+}
+@keyframes wave1{
+    0%{
+transform: rotate(-35deg)
+/* transform: rotate3d(1, 1, 1, -45deg); */
+    }
+    100%{
+        transform: rotate(3deg)
+        /* transform: rotate3d(1, 1, 1, 45deg); */
+    }
+}
