@@ -1,0 +1,68 @@
+
+<section id="section1">
+<div class="banner img-responsive">
+    <!-- <img src="../../assets/desk.jpg" alt=""> -->
+  <div class="banner-text">
+      Bonjour!
+
+  </div>
+  <div class="subtext">
+   I am Shreya Bhattacharya. Welcome to my portfolio.
+</div>
+    <a href="#section2">
+        <input type='button' class='btn more' (click)="onKnowMore()" value='Click here to know more'/>
+    </a>
+        <!-- <button class="more">more</button> -->
+
+
+
+
+</div>
+</section >
+<section id="section2">
+    <div class="container">
+<div class="secTwo" *ngIf="openDiv">
+    <!-- <app-about-des style="width: 50%;"></app-about-des>
+<app-about-image></app-about-image> -->
+<a href="#section3">
+<app-dashboard class="myDash"></app-dashboard>
+</a>
+</div>
+</div>
+</section>
+<section id="section3">
+    <div class="container1">
+        <div class="secThree" *ngIf="dataService.openAbout" >
+
+            <app-about-des style="width: 50%;"></app-about-des>
+        <app-about-image></app-about-image>
+        </div>
+
+        <div class="secThree" *ngIf="dataService.openWork">
+            <app-work style="width: 100%;"></app-work>
+        </div>
+        <div class="secFour" *ngIf="dataService.openSkill">
+            <div class="row" style="width: 100%;">
+                <div class="col-md-6" style="height: 100vh;">
+                    <app-skillbox  ></app-skillbox>
+                </div>
+                <div class="col-md-6" style="height: 100vh;padding-top: 50px;">
+                    <app-skill ></app-skill>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="secThree" *ngIf="dataService.openContact" >
+
+          <div class="col-md-6" style="height: 100vh;">
+            <app-contact></app-contact>
+            </div>
+          <!-- <app-about-des style="width: 50%;"></app-about-des> -->
+<app-contact-image style="width: 50%;"> </app-contact-image>
+      </div>
+        </div>
+
+</section>
+
