@@ -4,7 +4,7 @@ html{
 }
 .banner{
 background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url("../../assets/desk.jpg");
-height:100vh; 
+height:100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,7 +49,7 @@ height:100vh;
     border-radius: 7px;
     padding-top: 10px;
     transform: translate(-50%, -50%);
-    
+
     /* transition: all 0.2s !important; */
 }
 .btn{
@@ -68,7 +68,7 @@ input[type="button"].btn:hover{background:white;
 border: transparent;}
 .secTwo{
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../assets/black.jpeg");
-    height:100vh; 
+    height:100vh;
     display: flex;
       background-position: center;
       background-repeat: no-repeat;
@@ -84,7 +84,7 @@ border: transparent;}
 }
 .secThree{
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../assets/black.jpeg");
-    height:100vh; 
+    height:100vh;
     display: flex;
       background-position: center;
       background-repeat: no-repeat;
@@ -95,7 +95,7 @@ border: transparent;}
 }
 .secFour{
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../assets/black.jpeg");
-    height:100vh; 
+    height:100vh;
     display: flex;
       background-position: center;
       background-repeat: no-repeat;
@@ -118,7 +118,7 @@ content: 'I';
     top: 20%;
     border: 2px solid black;
 } */
-    
+
 .subtext{
     text-align: center;
     position: relative;
@@ -152,7 +152,7 @@ content: 'I';
         animation: wave 1s infinite alternate;
         transform-origin: revert;
         transform-box: fill-box;
-         
+
     }
     @keyframes wave{
         0%{
@@ -164,18 +164,18 @@ transform: rotate(-20deg)
     } */
 @keyframes text {
     0% {
-       
-  
+
+
     }
 
     30% {
         letter-spacing: 50px;
-        
+
     }
 
     85% {
         letter-spacing: 12px;
-       
+
     }
 }
 @keyframes sliding{
@@ -191,7 +191,7 @@ transform: rotate(-20deg)
     to{
         top: 0;
     } */
-}        
+}
 
 @keyframes indicating{
     from{
@@ -200,24 +200,32 @@ transform: rotate(-20deg)
     to{
         left: 0;
     }
-}  
+}
 /* .w3-animate-top{position:relative;animation:animatetop 0.4s} */
 @keyframes animatetop{
-    from{top:-300px;opacity:0} 
+    from{top:-300px;opacity:0}
     to{
         /* top:0; */
         opacity:1}}
  @keyframes animatetoptext{
-            from{left:-300px;opacity:0} 
+            from{left:-300px;opacity:0}
             to{
-           
+
                 opacity:1}
             }
 
 
 @keyframes button{
 from{right:-500px;
-    opacity:0} 
+    opacity:0}
 to{
    /* right:0; */
-opacity:1}}               
+opacity:1}}
+
+@media only screen and (max-width: 600px) {
+  .banner{
+    /* background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url("../../assets/desk.jpg");
+height:100vh; */
+  }
+
+}
