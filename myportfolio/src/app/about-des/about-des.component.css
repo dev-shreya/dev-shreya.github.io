@@ -16,6 +16,7 @@
     text-align: center;
     left: 20%;
     bottom: 10%;
+    font-family: cursive;
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 
@@ -91,7 +92,7 @@
   span {
     display: inline-block;
     opacity: 0;
-    font-family: fantasy;
+    font-family: cursive;
     filter: blur(4px);
     padding: 3px;
   }

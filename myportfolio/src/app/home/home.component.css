@@ -1,6 +1,10 @@
-
+/* @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900); */
+@import url('https://fonts.googleapis.com/css?family=Lobster');  
 html{
     scroll-behavior: smooth;
+    html, body, html * {
+  font-family: 'Roboto', sans-serif;
+}
 }
 .banner{
 background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url("../../assets/desk.jpg");
@@ -22,7 +26,8 @@ height:100vh;
     animation: text 3s 1;
     color: white;
     font-size: 167px;
-    font-family: Brush Script MT;
+    font-family: Lobster;
+    /* font-family: Brush Script MT !important; */
     text-shadow: 1px 1px 2px whitesmoke, 0 0 1em #0000ff, 0 0 0.2em blue;
     animation:animatetop 1s
 
@@ -36,6 +41,7 @@ height:100vh;
     top: 55%;
     height: 5rem;
     color: white;
+    font-family: Lobster;
     /* padding-top: 5px; */
     /* padding-bottom: 13px; */
     font-size: 26px;
@@ -123,7 +129,7 @@ content: 'I';
     text-align: center;
     position: relative;
     width: 900px;
-    font-family: fantasy;
+    font-family: Lobster;
  top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -222,10 +228,143 @@ to{
    /* right:0; */
 opacity:1}}
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 480px) {
+    .banner{
+        background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url("../../assets/desk.jpg");
+    height:100vh;
+      }
+      .subtext{
+        width: 341px;
+        font-size: 20px !important;
+        
+        top: 46%;
+      }
+      .more{
+        height: 4rem;
+        font-size: 17px;
+        font-family: 'Lobster';
+        /* font-family: cursive; */
+        padding-top: 6px;
+        top: 48%;
+      }
+      .banner-text{
+        top: 35%;
+        font-size: 75px;
+      }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .banner{
+        background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url("../../assets/desk.jpg");
+    height:100vh;
+      }
+      .subtext{
+        width: 341px;
+        font-size: 20px !important;
+       
+        /* top: 48%;
+        left: 48%; */
+      }
+      .more{
+        height: 4rem;
+        font-size: 18px;
+        font-family: 'Lobster';
+        /* font-family: cursive; */
+        padding-top: 6px;
+        top: 50%;
+      }
+      .banner-text{
+        top: 35%;
+        font-size: 100px;
+      }
+}
+    
+        /* Media Query for Tablets Ipads portrait mode */
+        @media (min-width: 768px) and (max-width: 1024px){
+            .banner{
+                background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url("../../assets/desk.jpg");
+            height:100vh;
+              }
+              .subtext{
+                width: 594px;
+                font-size: 23px !important;
+                /* top: 46%;
+                left: 48%; */
+              }
+              .more{
+                height: 5rem;
+                font-size: 22px;
+                /* font-family: cursive; */
+                font-family: 'Lobster';
+                padding-top: 6px;
+                /* top: 50%; */
+              }
+              .banner-text{
+                /* top: 35%; */
+                font-size: 150px;
+              }
+        
+        }
+          /* Media Query for Laptops and Desktops */
+          @media (min-width: 1025px) and (max-width: 1280px){
+            .banner{
+                background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url("../../assets/desk.jpg");
+            height:100vh;
+              }
+              .subtext{
+                width: 630px;
+                font-size: 25px !important;
+                
+                /* top: 46%;
+                left: 48%; */
+              }
+              .more{
+                height: 6rem;
+                font-size: 25px;
+                font-family: 'Lobster';
+                /* font-family: cursive; */
+                padding-top: 6px;
+                /* top: 50%; */
+              }
+              .banner-text{
+                /* top: 35%; */
+                font-size: 185px;
+              }
+        }
+           /* Media Query for Large screens */
+        @media (min-width: 1281px) {
+            .banner{
+                background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url("../../assets/desk.jpg");
+            height:100vh;
+              }
+              .subtext{
+                width: 630px;
+                font-size: 28px !important;
+               
+                top: 50%;
+                left: 48%;
+              }
+              .more{
+                height: 6rem;
+                font-size: 25px;
+                font-family: 'Lobster';
+                /* font-family: cursive; */
+                padding-top: 6px;
+                /* top: 50%; */
+              }
+              .banner-text{
+                /* top: 35%; */
+                font-size: 185px;
+              }
+        }
+/* @media only screen and (min-width: 701px) and (max-width: 900px) {
   .banner{
-    /* background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url("../../assets/desk.jpg");
-height:100vh; */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url("../../assets/desk.jpg");
+height:100vh;
   }
 
 }
+/* @media (max-width: 480px) { */
+    /* .text {
+      font-size: 16px;
+    }
+  } */ 
