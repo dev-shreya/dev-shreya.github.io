@@ -73,7 +73,7 @@ input[type="button"].btn:hover{background:white;
     text-shadow: 1px 1px 2px black;
 border: transparent;}
 .secTwo{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../assets/black.jpeg");
+    /* background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../assets/black.jpeg"); */
     height:100vh;
     display: flex;
       background-position: center;
@@ -114,6 +114,53 @@ row{
     padding-left: 0px;
     padding-right: 0px;
 }
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #be22bf  50%, rgb(67, 51, 214) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+    height: 100vh;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  h1 {
+    font-family:monospace;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
 /* input[type="button"].btn::before,input[type="button"].btn::after{
 content: 'I';
 
@@ -148,6 +195,7 @@ content: 'I';
     top: 30%;
     transform: translateY(-15%);
 }
+
 /* @media all and (max-width:30em){
      button-more{
       display:block;
@@ -168,6 +216,7 @@ transform: rotate(-20deg)
             transform: rotate(20deg)
         }
     } */
+    
 @keyframes text {
     0% {
 
@@ -251,6 +300,12 @@ opacity:1}}
         top: 35%;
         font-size: 75px;
       }
+      .secTwo{
+        width: -webkit-fill-available;
+      }
+      .myDash{
+        top: 25% !important;
+      }
 }
 @media (min-width: 481px) and (max-width: 767px) {
     .banner{
@@ -301,6 +356,13 @@ opacity:1}}
               .banner-text{
                 /* top: 35%; */
                 font-size: 150px;
+              }
+              .secTwo{
+                /* height: 100vh; */
+                background-position: center !important;
+              }
+              .section2{
+                height: 100vh;
               }
         
         }

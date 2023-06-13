@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');  
 .des{
     width: -webkit-fill-available;
     color: white;
@@ -5,6 +6,7 @@
     position: relative;
     top: 20%;
     left: 30%;
+    font-family: Lobster;
     text-align: center;
     margin-top: 0px;
 }
@@ -16,7 +18,7 @@
     text-align: center;
     left: 20%;
     bottom: 10%;
-    font-family: cursive;
+    font-family: Lobster;
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 
@@ -92,7 +94,7 @@
   span {
     display: inline-block;
     opacity: 0;
-    font-family: cursive;
+    font-family: Lobster;
     filter: blur(4px);
     padding: 3px;
   }

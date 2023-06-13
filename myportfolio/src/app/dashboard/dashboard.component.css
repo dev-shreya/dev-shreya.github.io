@@ -3,28 +3,28 @@ html{
 }
 img{
     height: 200px;
-    width: 200px;
+    /* width: 200px; */
     scroll-behavior: smooth;
     
 }
 
 #img1:hover{
-    animation: rotate 1s infinite ease-in-out alternate;
+    animation: bounce 1s infinite ease-in-out alternate;
     
     
 }
 #img2:hover{
-    animation: rotate1 1s infinite ease-in-out alternate;
+    animation: bounce 1s infinite ease-in-out alternate;
  
     
 }
 #img3:hover{
-    animation: rotate2 1s infinite ease-in-out
+    animation: bounce 1s infinite ease-in-out
     alternate;   
     
 }
 #img4:hover{
-    animation: rotate3 1s infinite ease-in-out alternate;
+    animation: bounce 1s infinite ease-in-out alternate;
   
     
 }
@@ -32,7 +32,33 @@ span{
     letter-spacing: 3px;
    
 }
-
+.area{
+  display:flex;
+  justify-content: center;
+}
+.about-section{
+  display:grid;
+  text-align: center;
+  height: 230px;
+}
+.work{
+  display:grid;
+  text-align: center;
+  margin-left: 100px;
+  height: 230px;
+}
+.skill{
+  display:grid;
+  text-align: center;
+  margin-left: 100px;
+  height: 230px;
+}
+.contact{
+  display:grid;
+  text-align: center;
+  margin-left: 100px;
+  height: 230px;
+}
 .para{
     /* margin-left: 63px; */
     position: relative;
@@ -40,7 +66,7 @@ span{
     color:white;
     display: inline-block;
     top: 20%;
-    font-family: fantasy;
+    font-family: Lobster;
     font-weight: 900;
     letter-spacing: 3px;
     /* top: 40%;
@@ -154,3 +180,52 @@ p span:nth-child(5) {
     }
 
 }
+@media (max-width: 480px) {
+  img{
+    height: 115px !important;
+    
+
+  }
+  .about-section{
+    align-content: center;
+    height: 230px;
+  }
+  .area{
+    flex-wrap: wrap;
+  }
+  .work{
+    margin-left: 50px;
+    align-content: center;
+    height: 230px;
+  }
+  .skill{
+margin-left: 0px !important;
+align-content: center;
+height: 230px;
+  }
+  .contact{
+    margin-left: 50px;
+    align-content: center;
+    height: 230px;
+  }
+  .para{
+    font-family: Lobster;
+    font-size: 20px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+ 
+}
+  
+      /* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+      
+      }
+        /* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+        
+      }
+         /* Media Query for Large screens */
+@media (min-width: 1281px) {
+   
+      }
