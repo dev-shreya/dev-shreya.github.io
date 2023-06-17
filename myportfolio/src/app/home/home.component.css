@@ -331,6 +331,11 @@ opacity:1}}
         top: 35%;
         font-size: 100px;
       }
+      .secTwo{
+        width: -webkit-fill-available;
+        overflow: auto;
+      }
+   
 }
     
         /* Media Query for Tablets Ipads portrait mode */
@@ -360,9 +365,13 @@ opacity:1}}
               .secTwo{
                 /* height: 100vh; */
                 background-position: center !important;
+                overflow: auto;
               }
               .section2{
                 height: 100vh;
+              }
+              .myDash{
+                top: 25% !important;
               }
         
         }
@@ -390,6 +399,11 @@ opacity:1}}
               .banner-text{
                 /* top: 35%; */
                 font-size: 185px;
+              }
+              .secTwo{
+                /* height: 100vh; */
+                background-position: center !important;
+                overflow: auto;
               }
         }
            /* Media Query for Large screens */
