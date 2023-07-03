@@ -1,17 +1,17 @@
 .card-container{
     /* display: flex; */
     display: flex;
-
+position: relative;
 grid-template-columns: repeat(2, 1fr);
 flex-wrap: wrap;
 grid-auto-rows: auto;
 
 /* grid-gap: 1rem; */
-    width: 100%;
+    width: -webkit-fill-available;
 
     margin-left: 30px;
     justify-content: space-around;
-    position: absolute;
+    /* position: absolute; */
     top: 20%;
     transform: translateY(-20%);
 }

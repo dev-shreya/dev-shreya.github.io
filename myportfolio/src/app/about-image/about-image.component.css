@@ -2,25 +2,30 @@
     animation: wave 1s infinite alternate;
     transform-origin:bottom;
     transform-box: fill-box;
-     
+
 }
 #Path2939{
     animation: wave1 1s infinite alternate;
     transform-origin:right;
     transform-box: fill-box;
-     
+
 }
 #Path2940{
     animation: bounce 1s infinite alternate;
     transform-origin:right;
     transform-box: fill-box;
-     
+
 }
 #Path2941{
     animation: bounce1 1s infinite alternate;
     transform-origin:right;
     transform-box: fill-box;
-     
+
+}
+.container{
+  display: flex;
+  justify-content: center;
+  width: -webkit-fill-available !important;
 }
 svg{
     height: 100vh;
@@ -59,12 +64,12 @@ transform: rotate(10deg)
 }
 @keyframes bounce1{
     0%{
-       
+
 transform: translateX(-3px)
 
     }
     100%{
         transform: translateX(5px)
-   
+
     }
 }

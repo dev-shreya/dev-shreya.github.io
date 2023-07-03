@@ -20,30 +20,49 @@
 </div>
 </section >
 <section id="section2">
-    <div class=" container" >
+    <div class="container" >
+      <!-- <div class="row" style="width: 100%;">
+        <div class="col-md-12" style="height: 100vh;"> -->
+          <!-- <video autoplay muted playsinline loop style="height: 100vh;">
+            <source src="../../assets/Blue Futuristic Technology Youtube Intro.mp4" type="video/mp4">
+
+          </video> -->
         <div class="bg"></div>
 <div class="bg bg2"></div>
 <div class="bg bg3"></div>
 <div class="secTwo" *ngIf="openDiv">
     <!-- <app-about-des style="width: 50%;"></app-about-des>
 <app-about-image></app-about-image> -->
+<div  style="width: 100%;height: 100vh;">
+  <!-- <div class="col-md-12" style="height: 100vh;"> -->
 <a href="#section3">
+
 <app-dashboard class="myDash"></app-dashboard>
+    <!-- </div>
+  </div> -->
 </a>
+<!-- </div> -->
+  </div>
 </div>
+        <!-- </div> -->
+      <!-- </div> -->
 </div>
 </section>
 <section id="section3">
     <div class="container1">
         <div class="secThree" *ngIf="dataService.openAbout" >
+  <div style="height: 100vh;width: max-content;">
+            <app-about-des style="height: 100vh;
+            display: block;"></app-about-des>
+  </div>
 
-            <app-about-des style="width: 50%;"></app-about-des>
-        <app-about-image></app-about-image>
         </div>
 
-        <div class="secThree" *ngIf="dataService.openWork">
+        <div class="secThree1" *ngIf="dataService.openWork">
             <app-work style="width: 100%;"></app-work>
         </div>
+
+
         <div class="secFour" *ngIf="dataService.openSkill">
             <div class="row" style="width: 100%;">
                 <div class="col-md-6" style="height: 100vh;">
@@ -65,7 +84,45 @@
           <!-- <app-about-des style="width: 50%;"></app-about-des> -->
 <app-contact-image style="width: 50%;"> </app-contact-image>
       </div>
-        </div>
+         </div>
 
 </section>
+<!-- --------------------- -->
 
+
+
+<!-- <section id="section3">
+  <div class="container1">
+      <div class="secThree" *ngIf="dataService.openAbout" >
+
+          <app-about-des style="width: 50%;"></app-about-des>
+      <app-about-image></app-about-image>
+      </div>
+
+      <div class="secThree" *ngIf="dataService.openWork">
+          <app-work style="width: 100%;"></app-work>
+      </div>
+      <div class="secFour" *ngIf="dataService.openSkill">
+          <div class="row" style="width: 100%;">
+              <div class="col-md-6" style="height: 100vh;">
+                  <app-skillbox  ></app-skillbox>
+              </div>
+              <div class="col-md-6" style="height: 100vh;padding-top: 50px;">
+                  <app-skill ></app-skill>
+              </div>
+          </div>
+
+
+
+      </div>
+      <div class="secThree" *ngIf="dataService.openContact" >
+
+        <div class="col-md-6" style="height: 100vh;">
+          <app-contact></app-contact>
+          </div>
+     <app-about-des style="width: 50%;"></app-about-des> -->
+<!-- <app-contact-image style="width: 50%;"> </app-contact-image>
+    </div>
+      </div>
+
+</section> -->

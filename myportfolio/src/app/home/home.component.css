@@ -1,5 +1,5 @@
 /* @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900); */
-@import url('https://fonts.googleapis.com/css?family=Lobster');  
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 html{
     scroll-behavior: smooth;
     html, body, html * {
@@ -89,21 +89,35 @@ border: transparent;}
     padding: 0;
 }
 .secThree{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../assets/black.jpeg");
+    /* background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../assets/black.jpeg"); */
     height:100vh;
-    display: flex;
+    /* background-color: black; */
+    /* display: flex; */
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      position: relative;
-      background-position:50% 50%;
+      /* position: relative; */
+      /* background-position:50% 50%; */
       /* animation: 25s sliding ease infinite; */
 }
+.secThree1{
+  /* background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../assets/black.jpeg"); */
+  height:100vh;
+  background-color: black;
+  /* display: flex; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    /* background-position:50% 50%; */
+    /* animation: 25s sliding ease infinite; */
+}
 .secFour{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../assets/black.jpeg");
+    /* background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../assets/black.jpeg"); */
     height:100vh;
     display: flex;
       background-position: center;
+      background-color: black;
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
@@ -126,16 +140,16 @@ row{
     z-index:-1;
     height: 100vh;
   }
-  
+
   .bg2 {
     animation-direction:alternate-reverse;
     animation-duration:4s;
   }
-  
+
   .bg3 {
     animation-duration:5s;
   }
-  
+
   .content {
     background-color:rgba(255,255,255,.8);
     border-radius:.25em;
@@ -148,11 +162,11 @@ row{
     top:50%;
     transform:translate(-50%, -50%);
   }
-  
+
   h1 {
     font-family:monospace;
   }
-  
+
   @keyframes slide {
     0% {
       transform:translateX(-25%);
@@ -186,6 +200,18 @@ content: 'I';
     text-shadow: 1px 1px 2px whitesmoke;
     animation:animatetoptext 4s
 }
+/* .bubbles{
+  position: relative;
+  display: flex;
+}
+.bubbles span{
+  width: 30px;
+  height: 30px;
+  background: #be22bf;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #0000ff;
+} */
 .myDash{
     width: 100%;
     /* display: flex; */
@@ -216,7 +242,7 @@ transform: rotate(-20deg)
             transform: rotate(20deg)
         }
     } */
-    
+
 @keyframes text {
     0% {
 
@@ -277,6 +303,11 @@ to{
    /* right:0; */
 opacity:1}}
 
+@media (max-width:280px){
+  .bg{
+ height: auto;
+  }
+}
 @media (max-width: 480px) {
     .banner{
         background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),url("../../assets/desk.jpg");
@@ -285,7 +316,7 @@ opacity:1}}
       .subtext{
         width: 341px;
         font-size: 20px !important;
-        
+
         top: 46%;
       }
       .more{
@@ -315,7 +346,7 @@ opacity:1}}
       .subtext{
         width: 341px;
         font-size: 20px !important;
-       
+
         /* top: 48%;
         left: 48%; */
       }
@@ -335,9 +366,9 @@ opacity:1}}
         width: -webkit-fill-available;
         overflow: auto;
       }
-   
+
 }
-    
+
         /* Media Query for Tablets Ipads portrait mode */
         @media (min-width: 768px) and (max-width: 1024px){
             .banner{
@@ -373,7 +404,7 @@ opacity:1}}
               .myDash{
                 top: 25% !important;
               }
-        
+
         }
           /* Media Query for Laptops and Desktops */
           @media (min-width: 1025px) and (max-width: 1280px){
@@ -384,7 +415,7 @@ opacity:1}}
               .subtext{
                 width: 630px;
                 font-size: 25px !important;
-                
+
                 /* top: 46%;
                 left: 48%; */
               }
@@ -415,7 +446,7 @@ opacity:1}}
               .subtext{
                 width: 630px;
                 font-size: 28px !important;
-               
+
                 top: 50%;
                 left: 48%;
               }
@@ -443,4 +474,4 @@ height:100vh;
     /* .text {
       font-size: 16px;
     }
-  } */ 
+  } */
