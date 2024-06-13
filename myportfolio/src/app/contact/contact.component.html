@@ -1,8 +1,31 @@
 <div class="container">
-  <h1>Email</h1>
-  <p>Email me : bhattacharyashreya86@gmail.com</p>
-  <h1>Let's get social</h1>
-  <img src="../../assets/icons8-linkedin-circled-48.png" (click)="goToLink('https://www.linkedin.com/in/shreya-bhattacharya-21402812a/')" alt="">
-  <img src="../../assets/icons8-github-48.png" (click)="goToLink('https://github.com/dev-shreya')"alt="">
+  <div class="left-side">
+      <div class="letter-image">
+          <div class="animated-mail">
+              <div class="back-fold"></div>
+              <div class="letter">
+                  <div class="letter-border"></div>
+                  <div class="letter-title"></div>
+                  <div class="letter-context"></div>
+                  <div class="letter-stamp">
+                      <div class="letter-stamp-inner"></div>
+                  </div>
+              </div>
+              <div class="top-fold"></div>
+              <div class="body"></div>
+              <div class="left-fold"></div>
+              <div class="right-fold"></div>
+              <div class="bottom-fold" ></div>
+          </div>
+          <div class="shadow"></div>
+      </div>
+  </div>
+  <div class="right-side">
+      <h1>Let's get social</h1>
+      <p>Email me: bhattacharyashreya86@gmail.com</p>
+      <div class="social-icons">
+          <img src="../../assets/free-linkedin-9730456-7970197.webp" (click)="onLinkedIn()" alt="LinkedIn">
+          <img src="../../assets/free-github-2950150-2447911.webp" (click)="onGit()"  alt="GitHub">
+      </div>
+  </div>
 </div>
-

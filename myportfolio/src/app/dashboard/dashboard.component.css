@@ -1,292 +1,213 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-img{
-    height: 200px;
-    /* width: 200px; */
-    scroll-behavior: smooth;
-    
-}
-
-#img1:hover{
-    animation: bounce 1s infinite ease-in-out alternate;
-    
-    
-}
-#img2:hover{
-    animation: bounce 1s infinite ease-in-out alternate;
- 
-    
-}
-#img3:hover{
-    animation: bounce 1s infinite ease-in-out
-    alternate;   
-    
-}
-#img4:hover{
-    animation: bounce 1s infinite ease-in-out alternate;
-  
-    
-}
-span{
-    letter-spacing: 3px;
-   
-}
-.area{
-  display:flex;
+.container{
+  display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: auto;
 }
-.about-section{
-  display:grid;
+img {
+  height: 250px;
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+span {
+  letter-spacing: 3px;
+}
+
+.area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.area > div {
+  width: 45%;
   text-align: center;
-  height: 230px;
 }
-.work{
-  display:grid;
-  text-align: center;
-  margin-left: 100px;
-  height: 230px;
+
+.para {
+  font-size: 30px;
+  color: white;
+  font-family: Lobster;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin-top: 5px;
 }
-.skill{
-  display:grid;
-  text-align: center;
-  margin-left: 100px;
-  height: 230px;
-}
-.contact{
-  display:grid;
-  text-align: center;
-  margin-left: 100px;
-  height: 230px;
-}
-.para{
-    /* margin-left: 63px; */
-    position: relative;
-    font-size: 30px;
-    color:white;
-    display: inline-block;
-    top: 20%;
-    font-family: Lobster;
-    font-weight: 900;
-    letter-spacing: 3px;
-    /* top: 40%;
-    transform: translate(-20%, 50%); */
-  
-}
+
 p span:hover {
-    position: relative;
-  
-    display: inline-block;
-    -webkit-animation: bounce 0.1s ease-in-out infinite alternate;
-   
-  }
-  
- p span:nth-child(2) {
-    -webkit-animation-delay: 0.1s;
-  }
-  
+  display: inline-block;
+  -webkit-animation: bounce 0.1s ease-in-out infinite alternate;
+}
+
+p span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+}
+
 p span:nth-child(3) {
-    -webkit-animation-delay: 0.2s;
-  }
-  
+  -webkit-animation-delay: 0.2s;
+}
+
 p span:nth-child(4) {
-    -webkit-animation-delay: 0.3s;
-  }
-  
+  -webkit-animation-delay: 0.3s;
+}
+
 p span:nth-child(5) {
-    -webkit-animation-delay: 0.4s;
-  }
-  
-  p span:nth-child(6) {
-    -webkit-animation-delay: 0.5s;
-  }
-  
-  p span:nth-child(7) {
-    -webkit-animation-delay: 0.6s;
-  }
-  
-  p span:nth-child(8) {
-    -webkit-animation-delay: 0.2s;
-  }
-  
-  p span:nth-child(9) {
-    -webkit-animation-delay: 0.3s;
-  }
-  
-  p span:nth-child(10) {
-    -webkit-animation-delay: 0.4s;
-  }
-  
-  p span:nth-child(11) {
-    -webkit-animation-delay: 0.5s;
-  }
-  
-  p span:nth-child(12) {
-    -webkit-animation-delay: 0.6s;
-  }
-  
-  p span:nth-child(13) {
-    -webkit-animation-delay: 0.7s;
-  }
-  
-  p span:nth-child(14) {
-    -webkit-animation-delay: 0.8s;
-  }
-
-
-@keyframes rotate{
-        0%{
-       transform: rotateY(0deg);
-        }
-        100%{
-            transform: rotateY(90deg);
-        }
-    
+  -webkit-animation-delay: 0.4s;
 }
-@keyframes bounce{
-    0%{
-   transform: translateY(0)
-    }
-    100%{
-        transform: translateY(-10px);
-     
-    }
 
+p span:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
 }
-@keyframes rotate1{
-    0%{
-   transform: rotateY(0deg);
-    }
-    100%{
-        transform: rotateY(90deg);
-    }
 
+p span:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
 }
-@keyframes rotate2{
-    0%{
-   transform: rotateY(0deg);
-    }
-    100%{
-        transform: rotateY(90deg);
-    }
 
+p span:nth-child(8) {
+  -webkit-animation-delay: 0.2s;
 }
-@keyframes rotate3{
-    0%{
-   transform: rotateY(0deg);
-    }
-    100%{
-        transform: rotateY(90deg);
-    }
 
+p span:nth-child(9) {
+  -webkit-animation-delay: 0.3s;
 }
+
+p span:nth-child(10) {
+  -webkit-animation-delay: 0.4s;
+}
+
+p span:nth-child(11) {
+  -webkit-animation-delay: 0.5s;
+}
+
+p span:nth-child(12) {
+  -webkit-animation-delay: 0.6s;
+}
+
+p span:nth-child(13) {
+  -webkit-animation-delay: 0.7s;
+}
+
+p span:nth-child(14) {
+  -webkit-animation-delay: 0.8s;
+}
+
 @media (max-width: 480px) {
-  img{
-    height: 115px !important;
-    
-
-  }
-  .about-section{
-    align-content: center;
-    height: 230px;
-  }
   .area{
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: auto;
   }
-  .work{
-    margin-left: 50px;
-    align-content: center;
-    height: 230px;
+  img {
+      height: 150px !important;
   }
-  .skill{
-margin-left: 0px !important;
-align-content: center;
-height: 230px;
+  .para {
+      font-family: Lobster;
+      font-size: 20px;
   }
-  .contact{
-    margin-left: 50px;
-    align-content: center;
-    height: 230px;
+  .area > div {
+      width: 100%;
   }
-  .para{
-    font-family: Lobster;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: auto;
+  }
+  img {
+      height: 250px !important;
+  }
+  .para {
+      font-family: Lobster;
+      font-size: 26px;
+  }
+  .area > div {
+      width: 45%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: calc(100% - 2rem);
+    width: 100%;
+    justify-content: center;
+  }
+  .container{
+    width: auto;
+  }
+  img {
+      height: 250px !important;
+  }
+  .para {
+      font-family: Lobster;
+      font-size: 42px;
+  }
+  .area > div {
+      width: auto;
+  }
+}
+  @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait){
+    .area{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      max-width: calc(100% - 2rem);
+      width: 100%;
+      justify-content: center;
+    }
+    img {
+      height: 340px;
+      transition: transform 0.3s ease-in-out;
+    }
+  .para {
+      font-family: Lobster;
+      font-size: 42px;
+  }
+  .area > div {
+      width: auto;
+  }
+}
+  /* Media query for Google Nest Hub and similar screens */
+@media (min-width: 1024px) and (max-width: 1024px) and (min-height: 600px) and (max-height: 600px) {
+  .area {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  img {
+    height: 150px!important ;
+  }
+
+  .para {
     font-size: 20px;
   }
-}
-@media (min-width: 481px) and (max-width: 767px) {
-  .area{
-    flex-wrap: wrap;
-  }
-  img{
-    height: 227px !important;
-    
 
-  }
-  .about-section{
-    align-content: center;
-    height: 250px;
-  }
-  .work{
-    margin-left: 30px;
-    align-content: center;
-    height: 250px;
-  }
-  .skill{
-margin-left: 0px !important;
-align-content: center;
-height: 250px;
-  }
-  .contact{
-    margin-left: 30px;
-    align-content: center;
-    height:  250px;
-  }
-  .para{
-    font-family: Lobster;
-    font-size: 26px;
+  .area > div {
+    width: 100%;
   }
 }
-  
-      /* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px){
-  .area{
-    flex-wrap: wrap;
-  }
-  img{
-    height: 234px !important;
-    
+  @media screen and (min-width: 1024px) and (orientation: landscape) {
+
+
 
   }
-  .about-section{
-    align-content: center;
-    height: 340px;
-    margin-left: 20px;
-  }
-  .work{
-    margin-left: 70px;
-    align-content: center;
-    height: 340px;
-  }
-  .skill{
-margin-left: 20px;
-align-content: center;
-height: 340px;
-  }
-  .contact{
-    margin-left: 70px;
-    align-content: center;
-    height:  340px;
-  }
-  .para{
-    font-family: Lobster;
-    font-size: 30px;
-  }
-      }
-        /* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px){
-        
-      }
-         /* Media Query for Large screens */
-@media (min-width: 1281px) {
-   
-      }
+

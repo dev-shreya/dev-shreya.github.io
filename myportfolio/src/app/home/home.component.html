@@ -1,128 +1,67 @@
-
 <section id="section1">
-<div class="banner img-responsive">
-    <!-- <img src="../../assets/desk.jpg" alt=""> -->
-  <div class="banner-text">
-      Bonjour!
-
-  </div>
-  <div class="subtext">
-   I am Shreya Bhattacharya. Welcome to my portfolio.
-</div>
-    <a href="#section2">
-        <input type='button' class='btn more' (click)="onKnowMore()" value='Click here to know more'/>
-    </a>
-        <!-- <button class="more">more</button> -->
-
-
-
-
-</div>
-</section >
-<section id="section2">
-    <div class="container" >
-      <!-- <div class="row" style="width: 100%;">
-        <div class="col-md-12" style="height: 100vh;"> -->
-          <!-- <video autoplay muted playsinline loop style="height: 100vh;">
-            <source src="../../assets/Blue Futuristic Technology Youtube Intro.mp4" type="video/mp4">
-
-          </video> -->
-        <div class="bg"></div>
-<div class="bg bg2"></div>
-<div class="bg bg3"></div>
-<div class="secTwo" *ngIf="openDiv">
-    <!-- <app-about-des style="width: 50%;"></app-about-des>
-<app-about-image></app-about-image> -->
-<div  style="width: 100%;height: 100vh;">
-  <!-- <div class="col-md-12" style="height: 100vh;"> -->
-<a href="#section3">
-
-<app-dashboard class="myDash"></app-dashboard>
-    <!-- </div>
-  </div> -->
-</a>
-<!-- </div> -->
-  </div>
-</div>
-        <!-- </div> -->
-      <!-- </div> -->
-</div>
-</section>
-<section id="section3">
-    <div class="container1">
-        <div class="secThree" *ngIf="dataService.openAbout" >
-  <div style="height: 100vh;width: max-content;">
-            <app-about-des style="height: 100vh;
-            display: block;"></app-about-des>
-  </div>
-
-        </div>
-
-        <div class="secThree1" *ngIf="dataService.openWork">
-            <app-work style="width: 100%;"></app-work>
-        </div>
-
-
-        <div class="secFour" *ngIf="dataService.openSkill">
-            <div class="row" style="width: 100%;">
-                <div class="col-md-6" style="height: 100vh;">
-                    <app-skillbox  ></app-skillbox>
-                </div>
-                <div class="col-md-6" style="height: 100vh;padding-top: 50px;">
-                    <app-skill ></app-skill>
-                </div>
-            </div>
-
-
-
-        </div>
-        <div class="secThree" *ngIf="dataService.openContact" >
-
-          <div class="col-md-6" style="height: 100vh;">
-            <app-contact></app-contact>
-            </div>
-          <!-- <app-about-des style="width: 50%;"></app-about-des> -->
-<app-contact-image style="width: 50%;"> </app-contact-image>
-      </div>
-         </div>
-
-</section>
-<!-- --------------------- -->
-
-
-
-<!-- <section id="section3">
-  <div class="container1">
-      <div class="secThree" *ngIf="dataService.openAbout" >
-
-          <app-about-des style="width: 50%;"></app-about-des>
-      <app-about-image></app-about-image>
-      </div>
-
-      <div class="secThree" *ngIf="dataService.openWork">
-          <app-work style="width: 100%;"></app-work>
-      </div>
-      <div class="secFour" *ngIf="dataService.openSkill">
-          <div class="row" style="width: 100%;">
-              <div class="col-md-6" style="height: 100vh;">
-                  <app-skillbox  ></app-skillbox>
-              </div>
-              <div class="col-md-6" style="height: 100vh;padding-top: 50px;">
-                  <app-skill ></app-skill>
-              </div>
+  <div class="banner img-responsive">
+    <div class="bn" style="display: flex; height: 100vh; width: 100%;">
+      <div class="text-banner10">
+        <div class="text-banner1">
+          <span class="banner-text1">Hello .....</span>
+          <h1>I'm <span class="multitext typing">{{ typingName }}</span></h1>
+          <p class="glowing-text">Welcome to my world</p>
+          <div class="f-btn">
+            <a href="#section2">
+              <input type="button" class="jelly-button" (click)="onKnowMore()" value="Click here to know more "/>
+            </a>
           </div>
-
-
-
+        </div>
       </div>
-      <div class="secThree" *ngIf="dataService.openContact" >
-
-        <div class="col-md-6" style="height: 100vh;">
-          <app-contact></app-contact>
-          </div>
-     <app-about-des style="width: 50%;"></app-about-des> -->
-<!-- <app-contact-image style="width: 50%;"> </app-contact-image>
+      <div class="splash-container">
+        <div class="profile-container">
+          <img src="../../assets/new_girl_avatar.png" alt="Profile Image" class="profile-image">
+        </div>
+      </div>
     </div>
-      </div>
+  </div>
+</section>
 
-</section> -->
+<section id="section2">
+  <div class="container">
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="secTwo" *ngIf="openDiv">
+      <div style="width: 100%;height: 100vh;">
+        <a href="#section3">
+          <app-dashboard class="myDash"></app-dashboard>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="section3">
+  <div class="container1">
+    <div class="secThree" *ngIf="dataservice.openAbout">
+      <div style="height: 100vh;width: max-content;">
+        <app-about-des style="height: 100vh; display: block;"></app-about-des>
+      </div>
+    </div>
+
+    <div class="secThree1" *ngIf="dataservice.openWork">
+      <app-work style="width: 100%;"></app-work>
+    </div>
+
+    <div class="secFour" *ngIf="dataservice.openSkill" style="display: flex; align-items: center; justify-content: center; height: 100vh;">
+      <div class="row" style="width: 100%;">
+        <div class="col-md-12" style="height: 100vh; padding-right: 0px; padding-left: 0px;">
+          <app-skill></app-skill>
+        </div>
+      </div>
+    </div>
+
+    <div class="secThree" *ngIf="dataservice.openContact">
+
+        <app-contact></app-contact>
+
+
+    </div>
+  </div>
+</section>

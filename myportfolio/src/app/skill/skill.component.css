@@ -1,47 +1,226 @@
-#hand1{
-    animation: wave 1s infinite alternate;
-    transform-origin:bottom;
-    transform-box: fill-box;
-     
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 800px;
 }
-#hand2{
-    animation: wave1 1s infinite alternate;
-    transform-origin:right;
-    transform-box: fill-box;
-     
+
+.skills-row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
-/* svg{
+
+.skill {
+  margin: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 243px;
+  margin: 20px;
+}
+
+.circle-wrap {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.inside-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: white; /* Inner white circle */
+  line-height: 120px;
+  text-align: center;
+  font-weight: bold;
+  color: #555;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  position: absolute;
+}
+
+.skill-name {
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+  font-family: serif;
+  font-weight: 100;
+}
+
+.heading {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 40px;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-} */
-/* #Path2940{
-    animation: bounce 1s infinite alternate;
-    transform-origin:right;
-    transform-box: fill-box;
-     
+    margin: 0 auto;
+  }
+
+  .skills-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .skill {
+    margin: 10px;
+    width: auto;
+  }
+
+  .circle-wrap {
+    width: 100px;
+    height: 100px;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .inside-circle {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  .skill-name {
+    font-size: 14px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
 }
-#Path2941{
-    animation: bounce1 1s infinite alternate;
-    transform-origin:right;
-    transform-box: fill-box;
-     
-} */
-@keyframes wave{
-    0%{
-transform: rotate(10deg)
-/* transform: rotate3d(1, 1, 1, -45deg); */
+@media (max-width: 480px) {
+  .skills-container {
+    padding: 20px;
+    justify-content: center;
+    height: auto;
+  }
+
+  .skills-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .circle-wrap {
+    width: 80px;
+    height: 80px;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .inside-circle {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+  }
+
+  .skill-name {
+    font-size: 20px;
+    padding-top: 30px;
+  }
+
+  .heading {
+    font-size: 26px;
+    font-family: cursive;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+.skill-name{
+  font-size: 22px;
+}
+.heading{
+  font-size: 35px;
+  font-family: cursive;
+}
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .skill-name{
+    font-size: 22px;
+  }
+  .heading{
+    font-size: 35px;
+    font-family: cursive;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait){
+  .skill-name{
+    font-size: 26px;
+  }
+  .heading{
+    font-size: 35px;
+    font-family: cursive;
+  }
+  .circle{
+    height: 200px;
+    width: 200px;
+
+     }
+     .skills-container{
+      margin:100px auto;;
     }
-    100%{
-        transform: rotate(-7deg)
-        /* transform: rotate3d(1, 1, 1, 45deg); */
+    .circle-wrap{
+      width: 200px;
+      height: 200px;
+    }
+    .inside-circle{
+      width: 160px;
+    height: 160px;
+    font-size: 26px;
+    line-height: 153px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+
+    .skill-name{
+      font-size: 22px;
+    }
+
+    .heading{
+      font-size: 35px;
+      font-family: cursive;
     }
 }
-@keyframes wave1{
-    0%{
-transform: rotate(-35deg)
-/* transform: rotate3d(1, 1, 1, -45deg); */
-    }
-    100%{
-        transform: rotate(3deg)
-        /* transform: rotate3d(1, 1, 1, 45deg); */
-    }
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .skill-name{
+    font-size: 22px;
+  }
+
+  .heading{
+    font-size: 35px;
+    font-family: cursive;
+  }
 }

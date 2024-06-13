@@ -10,7 +10,7 @@ import { WorkComponent } from './work/work.component';
 import { SkillComponent } from './skill/skill.component';
 import { SkillboxComponent } from './skillbox/skillbox.component';
 import { ContactComponent } from './contact/contact.component';
-import { ContactImageComponent } from './contact-image/contact-image.component';
+import { TypingAnimationDirective } from './typing-animation.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { ContactImageComponent } from './contact-image/contact-image.component';
     SkillComponent,
     SkillboxComponent,
     ContactComponent,
-    ContactImageComponent
+    TypingAnimationDirective
   ],
   imports: [
     BrowserModule

@@ -1,11 +1,385 @@
-h1{
-  color: wheat;
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
 }
-p{
-  color: white;
+.container {
+  display: flex;
+  height: 100vh;
+  /* width: 80vw; */
+  width: 100vw;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.container{
+
+.left-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 295px;
+}
+
+.letter-image {
+  position: relative;
+  width: 40%;
+  padding-bottom: 40%;
+}
+.animated-mail {
+  position: absolute;
+  height: 150px;
+  width: 200px;
+}
+
+.right-fold {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 100px 50px 0;
+  border-color: transparent #e15349 transparent transparent;
+  transform-origin: bottom right;
+  z-index: 2;
+}
+
+.back-fold {
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  height: 100px;
+  background: #cf4a43;
+  z-index: 1;
+}
+
+.bottom-fold {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-style: solid;
+  border-width: 0 97px 59px 100px;
+  border-color: transparent transparent #cf4a43 transparent;
+  z-index: 2;
+}
+
+
+.body {
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  height: 100px;
+  /* background-color: white; */
+  z-index: 1;
+  transform-origin: bottom center;
+  animation: slideLetter 9s infinite alternate;
+}
+
+
+.left-fold {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 0 50px 100px;
+  border-color: transparent transparent transparent #e15349;
+  transform-origin: bottom left;
+  transform: rotate(0deg);
+  z-index: 2;
+}
+
+.letter {
+  left: 20px;
+  bottom: 0;
+  position: absolute;
+  width: 160px;
+  height: 90px;
+  background: white;
+  z-index: 2;
+  overflow: hidden;
+  transition: .4s .2s;
+  animation: popOut 2s infinite alternate;
+}
+
+.letter-border {
+  height: 10px;
+  width: 100%;
+  background: repeating-linear-gradient(-45deg, #cb5a5e, #cb5a5e 8px, transparent 8px, transparent 18px);
+}
+
+.letter-title {
+  margin-top: 10px;
+  margin-left: 5px;
+  height: 10px;
+  width: 40%;
+  background: #cb5a5e;
+}
+
+.shadow {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  width: 400px;
+  height: 30px;
+  transition: .4s;
+  transform: translateX(-50%);
+  border-radius: 100%;
+  background: radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0), rgba(0,0,0,0.0));
+}
+
+@keyframes slideLetter {
+  0% {
+      transform: scaleY(0);
+  }
+  100% {
+      transform: scaleY(1);
+  }
+}
+
+
+@keyframes closeEnvelope {
+  0%, 100% {
+    transform: perspective(600px) rotateX(-180deg);
+
+  }
+  50% {
+    transform: perspective(600px) rotateX(0);
+  }
+}
+
+
+@keyframes popOut {
+  0%, 100% {
+    bottom: 50px;
+    z-index: 2;
+  }
+  50% {
+    bottom: 0;
+    z-index: 2;
+  }
+}
+.top-fold {
+  position: absolute;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 100px 0 100px;
+  transform-origin: 50% 0%;
+  animation: closeEnvelope 2s forwards, delayPopOut 2s 5s forwards;
+  border-color: #cf4a43 transparent transparent transparent;
+  z-index: 1;
+}
+
+@keyframes delayPopOut {
+  0%, 100% {
+    bottom: 0;
+    z-index:1;
+  }
+  50% {
+    bottom: 100px;
+    z-index: 5;
+  }
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+        /* box-shadow: none; */
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   text-align: center;
-  width: auto;
-  margin-top: 20%;
+}
+
+.right-side h1 {
+  font-size: 45px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.right-side p {
+  font-size: 20px;
+  color: #f5f5f5;
+  margin-bottom: 20px;
+}
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .left-side{
+    width: 100%;
+    padding: 0 50px
+  }
+  .right-side {
+    width: 100%;
+    /* padding: 20px 0 */
+    justify-content: flex-start  !important;
+  }
+  .letter-image {
+    width: 80%;
+    padding-bottom: 80px 50px;
+  }
+
+  .right-side {
+    padding-top: 20px;
+  }
+
+  .right-side h1 {
+    font-size: 30px;
+        font-family: cursive;
+  }
+
+  .right-side p {
+    font-size: 24px;
+    font-family: cursive;
+  }
+
+  .social-icons img {
+    width: 50px;
+    height: 50px;
+  }
+  .letter {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .left-side, .right-side {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .right-side{
+    justify-content: flex-start;
+  }
+  .letter-image {
+    width: 30%;
+    padding-bottom: 0px;
+  }
+
+  .right-side h1 {
+    font-size: 50px;
+    font-family: cursive;
+  }
+
+  .right-side p {
+    font-size: 40px;
+    font-family: cursive;
+  }
+
+  .social-icons img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .letter {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .left-side, .right-side {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .right-side{
+    justify-content: flex-start;
+  }
+  .letter-image {
+    width: 30%;
+    padding-bottom: 0px;
+  }
+
+  .right-side h1 {
+    font-size: 60px;
+    font-family: cursive;
+  }
+
+  .right-side p {
+    font-size: 43px;
+    font-family: cursive;
+  }
+
+  .social-icons img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .letter {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+}
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait){
+.left-side{
+  padding-right: 0px;
+}
+.right-side h1{
+  font-size: 54px;
+    font-family: cursive;
+}
+.right-side p{
+  font-size: 40px;
+    font-family: cursive;
+}
+.social-icons img{
+  height: 100px;
+  width: 100px;
+}
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .left-side{
+    padding-right: 0px;
+  }
+  .right-side h1{
+    font-size: 45px;
+      font-family: cursive;
+  }
+  .right-side p{
+    font-size: 30px;
+      font-family: cursive;
+  }
+  .social-icons img{
+    height: 100px;
+    width: 100px;
+  }
 }
