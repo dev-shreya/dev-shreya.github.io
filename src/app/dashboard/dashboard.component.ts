@@ -15,15 +15,20 @@ export class DashboardComponent implements OnInit {
   onOpenAbout(){
 this.dataservice.openAbout=true;
 this.dataservice.openWork=false;
+this.dataservice.openSkill=false;
+this.dataservice.openContact=false;
   }
   onOpenWork(){
     this.dataservice.openWork=true;
     this.dataservice.openAbout=false;
+    this.dataservice.openSkill=false;
+    this.dataservice.openContact=false;
   }
   onOpenSkill(){
     this.dataservice.openSkill=true;
     this.dataservice.openWork=false;
     this.dataservice.openAbout=false;
+    this.dataservice.openContact=false;
   }
   openContact(){
     this.dataservice.openContact=true;
